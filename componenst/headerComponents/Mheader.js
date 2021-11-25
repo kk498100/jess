@@ -3,13 +3,28 @@ import style from './mheader.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
 import CustomLink from '../Link';
+import { useState } from 'react';
 
 export default function Mheader() {
+    const [ showAside, controlShowAside ] = useState(false);
+
+    const openAside = () => {
+        controlShowAside(true);
+    };
+
+    const hideAside = () => {
+        controlShowAside(false);
+    }
+
     return (
         <header className="md:hidden">
-            <Icon name="nav_btn" className={`fill-white ${ style.navBtn }`} />
+            <span onClick={openAside}>
+                <Icon name="nav_btn" className={`fill-white ${ style.navBtn }`} />
+            </span>
 
-            <aside className={`w-full h-screen ${ style.mask }`}>
+            <span className={`w-full h-screen ${ style.mask } ${ showAside && style.maskShow }`}></span>
+
+            <aside className={`w-full h-screen ${ style.guid } ${ showAside && style.guidShow }`} onClick={hideAside}>
                 <div className={style.guidArea}>
                     <Link href={'/'}>
                         <a className={`relative inline-block ${ style.logo }`}><Image src="/images/common/logo.svg" alt="logo" priority layout="fill" /></a>

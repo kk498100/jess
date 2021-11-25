@@ -6,14 +6,29 @@
     @apply fixed hover:fill-primary cursor-pointer z-40;
 }
 
-.mask {
-    background-color: rgba(#000, .3);
+.guid {
+    // background-color: rgba(#000, .3);
     @apply fixed left-0 top-0 z-50;
+    transform: translateX(-100%);
+    transition: transform .5s;
+}
+
+.guidShow {
+    transform: translateX(0);
 }
 
 .guidArea {
     padding: 1.15rem .4rem 0;
     @apply w-3/5 h-full bg-white box-border flex flex-col;
+}
+
+.mask {
+    background-color: rgba(#000, .3);
+    @apply fixed left-0 top-0 z-10 hidden;
+}
+
+.maskShow {
+    @apply block;
 }
 
 .logo {

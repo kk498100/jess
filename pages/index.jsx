@@ -9,7 +9,9 @@ export default function Home() {
                 <meta property="og:title" content="首页" key="title" />
                 <title>首页</title>
             </Head>
-            <div className={ style.banner }></div>
+            <div className={`${ style.banner } flex flex-col items-center justify-center`}>
+                
+            </div>
         </>
     );
 }
