@@ -11,7 +11,30 @@
     @apply fixed left-0 top-0 z-50;
 }
 
+.guidArea {
+    padding: 1.15rem .4rem 0;
+    @apply w-3/5 h-full bg-white box-border flex flex-col;
+}
+
 .logo {
-    width: 2.61rem;
-    height: .8rem;
+    width: 3.57rem;
+    height: .91rem;
+    transition: width .2s;
+}
+
+.link {
+    width: 3.73rem;
+    height: .91rem;
+    font-size: .45rem;
+    color: #333;
+    @apply flex items-center justify-center bg-white leading-none rounded-full;
+
+    &.activeLink {
+        box-shadow: 0 1px .24rem 0 rgba(17, 88, 232, 0.65);
+        @apply bg-primary text-white;
+    }
+
+    &:hover {
+        @apply bg-primary text-white;
+    }
 }
