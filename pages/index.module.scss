@@ -1,0 +1,10 @@
+.banner {
+    height: 10rem;
+    @apply w-full bg-no-repeat bg-center bg-cover;
+    background-image: url('/images/index/banner_m.jpg');
+
+    @screen md {
+        height: 800px;
+        background-image: url('/images/index/banner.jpg');
+    }
+}

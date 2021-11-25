@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="44" viewBox="0 0 220 44">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 60px;
+        fill: #1158e8;
+        text-anchor: middle;
+        font-family: YouSheBiaoTiHei;
+        text-transform: uppercase;
+      }
+    </style>
+  </defs>
+  <text id="杰斯科技" class="cls-1" x="109.732" y="43.166"><tspan x="109.732">杰斯科技</tspan></text>
+</svg>
