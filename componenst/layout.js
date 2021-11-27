@@ -14,7 +14,7 @@ export default function Layout({ children }) {
             {/* 手机端头部 */}
             <Mheader />
             <main className="w-full min-h-screen">{ children }</main>
-            <Script src="/js/wow.js" strategy="lazyOnload"></Script>
+            <Script src="/js/wow.js"></Script>
         </>
     );
 }

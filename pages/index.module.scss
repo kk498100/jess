@@ -158,6 +158,17 @@
         font-size: .24rem;
         margin-top: .16rem;
     }
+    
+    .icon {
+        width: 2.4rem;
+        height: 2.08rem;
+    }
+
+    .msg {
+        font-size: .43rem;
+        color: #333;
+        margin-top: .37rem;
+    }
 
     @screen md {
         margin-top: 80px;
@@ -170,6 +181,225 @@
             font-size: 18px;
             margin-top: 16px;
         }
+    
+        .icon {
+            width: 159px;
+            height: 158px;
+        }
+    
+        .msg {
+            font-size: 40px;
+            color: #333;
+            margin-top: 70px;
+        }
 
+    }
+}
+
+.case {
+    margin-top: 1.6rem;
+
+    .title {
+        font-size: .53rem;
+        color: #333;
+    }
+
+    .tip {
+        font-size: .24rem;
+        margin-top: .16rem;
+    }
+
+    .mask {
+        padding: 0 .4rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 60;
+        background-color: rgba($color: #000, $alpha: .4);
+        padding-top: .85rem;
+        padding-bottom: .85rem;
+        transition: .3s ease;
+
+        &:hover {
+            backdrop-filter: blur(20px);
+        
+            .caseItemLink {
+                @apply text-primary;
+            }
+
+            .iconArae {
+                @apply bg-primary text-white;
+            }
+        }
+    }
+
+    .iconArae {
+        width: 1.33rem;
+        height: 1.33rem;
+        @apply flex-none bg-white rounded-full flex items-center justify-center text-primary;
+
+        .iconComputer {
+            width: .67rem;
+            height: .61rem;
+            @apply fill-current;
+            transition: .3s ease;
+        }
+
+        .iconApp {
+            width: .67rem;
+            height: .93rem;
+            @apply fill-current;
+        }
+
+        .iconMiniprogram {
+            width: .81rem;
+            height: .77rem;
+            @apply fill-current;
+        }
+
+        .iconNet {
+            width: .92rem;
+            height: .92rem;
+            @apply fill-current;
+        }
+    }
+
+    .caseItemTitle {
+        font-size: .48rem;
+        margin-top: .4rem;
+        @apply text-white leading-none;
+    }
+
+    .caseItemTip {
+        font-size: .32rem;
+        margin-top: .27rem;
+        @apply text-white text-center break-words whitespace-normal w-full leading-normal flex-1;
+    }
+
+    .caseItemLink {
+        font-size: .4rem;
+        text-decoration: underline;
+        @apply text-white leading-none;
+    }
+
+    @screen md {
+        margin-top: 180px;
+
+        .title {
+            font-size: 48px;
+        }
+
+        .tip {
+            font-size: 18px;
+            margin-top: 16px;
+        }
+
+        .caseContainer {
+            width: 300px;
+            height: 520px;
+        }
+
+        .mask {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        .iconArae {
+            width: 130px;
+            height: 130px;
+
+            .iconComputer {
+                width: 68px;
+                height: 59px;
+            }
+
+            .iconApp {
+                width: 51px;
+                height: 77px;
+            }
+
+            .iconMiniprogram {
+                width: 61px;
+                height: 58px;
+            }
+
+            .iconNet {
+                width: 69px;
+                height: 69px;
+            }
+        }
+
+        .caseItemTitle {
+            font-size: 40px;
+            margin-top: 30px;
+        }
+
+        .caseItemTip {
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        .caseItemLink {
+            font-size: 30px;
+        }
+    }
+}
+
+.solve {
+    margin-top: 1.6rem;
+
+    .title {
+        font-size: .53rem;
+        color: #333;
+    }
+
+    .tip {
+        font-size: .24rem;
+        margin-top: .16rem;
+    }
+
+    .infoTitle {
+        font-size: .48rem;
+        text-align: center;
+        color: #333;
+    }
+    
+    .infoTip {
+        width: 100%;
+        text-align: center;
+        font-size: .32rem;
+        padding: .35rem .4rem 0;
+        color: #333;
+        @apply box-border break-words whitespace-normal leading-normal;
+    }
+
+    .imgArea {
+        // width: 840px;
+        height: 574px;
+        flex: 2;
+    }
+
+    @screen md {
+        margin-top: 180px;
+
+        .title {
+            font-size: 48px;
+        }
+
+        .tip {
+            font-size: 18px;
+            margin-top: 16px;
+        }
+
+        .infoTitle {
+            font-size: 44px;
+            text-align: left;
+        }
+
+        .infoTip {
+            font-size: 18px;
+            text-align: left;
+            padding: 40px 0 0;
+        }
     }
 }
