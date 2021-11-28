@@ -126,18 +126,21 @@ export default function Home() {
                 </div>
             </div>
             {/* 解决方案 */}
-            <div className={`container flex flex-col items-center ${ style.solve }`}>
+            <div className={`container flex flex-col items-center mb-2 md:mb-12 ${ style.solve }`}>
                 <h2 className={`${ style.title } wow animated bounceInDown`}>解决方案</h2>
                 <h3 className={`${ style.tip } wow animated bounceInLeft text-dustyGray`}>解决企业与互联网的最后一步，为企业发展画上完美一笔</h3>
                 <div className={`flex items-center justify-between mt-4 md:mt-16`}>
                     <div className={`relative hidden lg:inline-block ${ style.imgArea }`}>
                         <Image src={'/images/index/solve.jpg'} alt="解决方案" priority layout="fill" />
                     </div>
-                    <div className="flex flex-1 flex-col justify-center lg:ml-14">
+                    <div className="flex flex-1 flex-col justify-center items-center md:items-start lg:ml-14">
                         <text className={style.infoTitle}>互联网科技为你解决以下痛点</text>
                         <text className={style.infoTip}>
                             我们有完整的高端技术人才团队，能够为您减少搭建平台组建团队的烦恼，提供完整的一站式服务流程，从0到1的平台搭建。让您的企业快速对接互联网，减少您各方面的资金支出。
                         </text>
+                        <Link href="/case">
+                            <a className={style.link}>查看详情</a>
+                        </Link>
                     </div>
                 </div>
             </div>

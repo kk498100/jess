@@ -1,0 +1,11 @@
+.footer {
+    background-color: #1b1b1b;
+    color: #999;
+    font-size: .37rem;
+    padding: .53rem 0;
+    @apply w-full text-center;
+
+    @screen md {
+        @apply hidden;
+    }
+}

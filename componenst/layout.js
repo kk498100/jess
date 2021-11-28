@@ -1,5 +1,8 @@
 import Head from 'next/head';
 import Mheader from './headerComponents/Mheader';
+import PCheader from './headerComponents/PCheader';
+import Mfooter from './footerComponents/Mfooter';
+import PCfooter from './footerComponents/PCfooter';
 import Script from 'next/script';
 
 export default function Layout({ children }) {
@@ -13,7 +16,13 @@ export default function Layout({ children }) {
             </Head>
             {/* 手机端头部 */}
             <Mheader />
+            {/* pc端头部 */}
+            <PCheader />
             <main className="w-full min-h-screen">{ children }</main>
+            {/* m端底部 */}
+            <Mfooter />
+            {/* pc端底部 */}
+            <PCfooter />
             <Script src="/js/wow.js"></Script>
         </>
     );
