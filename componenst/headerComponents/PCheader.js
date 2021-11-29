@@ -19,11 +19,11 @@ export default function PCheader() {
                         <a className={`${ style.link } mr-1 lg:mr-3`}>服务介绍</a>
                     </CustomLink>
                     <CustomLink href={'/case'} activeClassName={style.activeLink}>
-                        <a className={`${ style.link } mr-1 lg:mr-3`}>开发案例</a>
+                        <a className={`${ style.link }`}>开发案例</a>
                     </CustomLink>
-                    <CustomLink href={'/about'} activeClassName={style.activeLink}>
+                    {/* <CustomLink href={'/about'} activeClassName={style.activeLink}>
                         <a className={`${ style.link }`}>关于我们</a>
-                    </CustomLink>
+                    </CustomLink> */}
                 </nav>
             </div>
         </header>

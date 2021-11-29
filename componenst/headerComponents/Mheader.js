@@ -39,9 +39,9 @@ export default function Mheader() {
                     <CustomLink href={'/case'} activeClassName={style.activeLink}>
                         <a className={`mt-1 ${ style.link }`}>开发案例</a>
                     </CustomLink>
-                    <CustomLink href={'/about'} activeClassName={style.activeLink}>
+                    {/* <CustomLink href={'/about'} activeClassName={style.activeLink}>
                         <a className={`mt-1 ${ style.link }`}>关于我们</a>
-                    </CustomLink>
+                    </CustomLink> */}
                 </div>
             </aside>
         </header>

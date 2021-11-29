@@ -1,0 +1,212 @@
+.banner {
+    height: 10rem;
+    @apply w-full bg-no-repeat bg-center bg-cover;
+    background-image: url('/images/index/banner_m.jpg');
+
+    .textArea {
+        backdrop-filter: blur(1.5px);
+        @apply w-full h-full flex items-center justify-center;
+    }
+
+    .text {
+        padding: .67rem .27rem .53rem;
+        border: .08rem solid #fff;
+        @apply relative flex flex-col box-border items-center;
+    }
+
+    .title, .msg {
+        font-family: 'ZCOOL XiaoWei', serif;
+    }
+
+    .title, .msg, .tip {
+        @apply text-white whitespace-nowrap;
+    }
+
+    .title {
+        font-size: .69rem;
+        padding: 0 .13rem;
+        line-height: 1;
+        mask: radial-gradient(circle at 0 50%, #000, transparent 10%, transparent 0);
+        mask-size: 100%;
+        animation: scale 5s infinite;
+        text-align: center;
+    }
+
+    .msg {
+        font-size: .53rem;
+        line-height: 1;
+    }
+
+    .tip {
+        font-size: .21rem;
+        margin-top: .27rem;
+    }
+
+    @screen md {
+        height: 800px;
+        background-image: url('/images/index/banner.jpg');
+
+        .text {
+            padding: 60px 70px;
+            border: 6px solid #fff;
+        }
+
+        .title {
+            font-size: 76px;
+        }
+
+        .msg {
+            font-size: 40px;
+        }
+    
+        .tip {
+            font-size: 18px;
+            margin-top: 26px;
+        }
+    }
+}
+
+@keyframes scale {
+    50%,
+    100% {
+        mask-size: 2000%;
+    }
+}
+
+.case {
+    margin-top: .8rem;
+
+    .title {
+        font-size: .53rem;
+        color: #333;
+    }
+
+    .tip {
+        font-size: .24rem;
+        margin-top: .16rem;
+    }
+
+    .con {
+        margin-top: .96rem;
+        box-sizing: border-box;
+        padding: 0 .4rem;
+        margin-bottom: 1.33rem;
+    }
+
+    .itemTitle {
+        font-size: .4rem;
+        font-weight: 800;
+        margin-top: .35rem;
+    }
+
+    .itemMsg {
+        font-size: .32rem;
+        margin-top: .24rem;
+    }
+
+    .linkArea {
+        @apply relative;
+
+        &:hover {
+            .mask {
+                backdrop-filter: blur(10px);
+                @apply flex items-center justify-center text-white;
+                background-color: rgba(#000, .4);
+
+                &::before, &::after {
+                    position: absolute;
+                    left: -3px;
+                    right: -3px;
+                    top: -3px;
+                    bottom: -3px;
+                    border: 3px solid #1158e8;
+                    content: "";
+                    animation: move 5s linear infinite;
+                }
+
+                &::after {
+                    animation-delay: -2.5s;
+                }
+            }
+        }
+    }
+
+    .mask {
+        @apply w-full h-full absolute left-0 top-0 z-10 hidden;
+        transition: all .5s ease;
+        font-size: 20px;
+    }
+
+    @screen md {
+        margin-top: 80px;
+
+        .title {
+            font-size: 48px;
+        }
+
+        .tip {
+            font-size: 18px;
+            margin-top: 16px;
+        }
+
+        .con {
+            margin-top: 74px;
+            padding: 0;
+            margin-bottom: 140px;
+        }
+    
+        .itemTitle {
+            font-size: 26px;
+            margin-top: 30px;
+        }
+    
+        .itemMsg {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+    }
+}
+
+@keyframes move {
+	0%,
+	100% {
+		clip: rect(0 446px 3px 0);
+	}
+	25% {
+		clip: rect(0 446px 374px 371px);
+	}
+	50% {
+		clip: rect(371px 374px 374px 0);
+	}
+	75% {
+		clip: rect(0 3px 374px 0);
+	}
+}
+
+.caseDetail {
+    padding: .8rem .4rem;
+
+    .title {
+        font-size: .43rem;
+        font-weight: 800;
+        color: #333;
+    }
+
+    .con {
+        margin-top: .85rem;
+        @apply w-full flex flex-col items-center;
+    }
+
+    @screen md {
+        padding: 100px 0;
+
+        .title {
+            font-size: 48px;
+        }
+
+        .con {
+            margin-top: 100px;
+        }
+    }
+}
+  

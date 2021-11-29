@@ -33,12 +33,12 @@ export default function Home() {
             </Head>
             {/* banner */}
             <div className={`${ style.banner } flex flex-col items-center justify-center`}>
-                <text id="bannerTxt_01" className={`text-white ${ style.bannerTxt_01 }`}>互联网一站式服务平台</text>
-                <text className={`text-white ${ style.bannerTxt_02 }`}>助你轻松进入互联网+时代</text>
-                <Link href={'/about'}>
+                <span id="bannerTxt_01" className={`text-white ${ style.bannerTxt_01 }`}>互联网一站式服务平台</span>
+                <span className={`text-white ${ style.bannerTxt_02 }`}>助你轻松进入互联网+时代</span>
+                <Link href={'/case'}>
                     <a className={style.link}>
                         <div className={style.front}><Icon name="long_arr" className={`fill-white ${ style.icon }`} /></div>
-                        <div className={style.back}>关于我们</div>
+                        <div className={style.back}>开发案例</div>
                     </a>
                 </Link>
             </div>
@@ -72,7 +72,7 @@ export default function Home() {
                 <h3 className={`${ style.tip } wow animated bounceInLeft text-dustyGray`}>网站、APP、小程序、设计，一条龙定制服务</h3>
                 <div className={`container grid mt-4 grid-cols-2 gap-1 lg:grid-cols-3 xl:grid-cols-4 md:gap-y-10 md:mt-16`}>
                     <div className={`w-full relative mx-auto h-28 ${ style.caseContainer }`}>
-                        <Image src={'/images/index/case_01.jpg'} alt="case-1" priority layout="fill" />
+                        <Image src={'/images/index/case_01.jpg'} alt="case-1" layout="fill" />
                         <Link href={'/case'}>
                             <a className={`${ style.mask } w-full h-full flex flex-col items-center box-border`}>
                                 <span className={`${ style.iconArae }`}>
@@ -85,7 +85,7 @@ export default function Home() {
                         </Link>
                     </div>
                     <div className={`w-full relative mx-auto h-28 ${ style.caseContainer }`}>
-                        <Image src={'/images/index/case_02.jpg'} alt="case-2" priority layout="fill" />
+                        <Image src={'/images/index/case_02.jpg'} alt="case-2" layout="fill" />
                         <Link href={'/case'}>
                             <a className={`${ style.mask } w-full h-full flex flex-col items-center box-border`}>
                                 <span className={`${ style.iconArae }`}>
@@ -98,7 +98,7 @@ export default function Home() {
                         </Link>
                     </div>
                     <div className={`w-full relative mx-auto h-28 ${ style.caseContainer }`}>
-                        <Image src={'/images/index/case_03.jpg'} alt="case-3" priority layout="fill" />
+                        <Image src={'/images/index/case_03.jpg'} alt="case-3" layout="fill" />
                         <Link href={'/case'}>
                             <a className={`${ style.mask } w-full h-full flex flex-col items-center box-border`}>
                                 <span className={`${ style.iconArae }`}>
@@ -111,7 +111,7 @@ export default function Home() {
                         </Link>
                     </div>
                     <div className={`w-full relative mx-auto h-28 ${ style.caseContainer }`}>
-                        <Image src={'/images/index/case_04.jpg'} alt="case-4" priority layout="fill" />
+                        <Image src={'/images/index/case_04.jpg'} alt="case-4" layout="fill" />
                         <Link href={'/case'}>
                             <a className={`${ style.mask } w-full h-full flex flex-col items-center box-border`}>
                                 <span className={`${ style.iconArae }`}>
@@ -131,13 +131,13 @@ export default function Home() {
                 <h3 className={`${ style.tip } wow animated bounceInLeft text-dustyGray`}>解决企业与互联网的最后一步，为企业发展画上完美一笔</h3>
                 <div className={`flex items-center justify-between mt-4 md:mt-16`}>
                     <div className={`relative hidden lg:inline-block ${ style.imgArea }`}>
-                        <Image src={'/images/index/solve.jpg'} alt="解决方案" priority layout="fill" />
+                        <Image src={'/images/index/solve.jpg'} alt="解决方案" layout="fill" />
                     </div>
                     <div className="flex flex-1 flex-col justify-center items-center md:items-start lg:ml-14">
-                        <text className={style.infoTitle}>互联网科技为你解决以下痛点</text>
-                        <text className={style.infoTip}>
+                        <span className={style.infoTitle}>互联网科技为你解决以下痛点</span>
+                        <span className={style.infoTip}>
                             我们有完整的高端技术人才团队，能够为您减少搭建平台组建团队的烦恼，提供完整的一站式服务流程，从0到1的平台搭建。让您的企业快速对接互联网，减少您各方面的资金支出。
-                        </text>
+                        </span>
                         <Link href="/case">
                             <a className={style.link}>查看详情</a>
                         </Link>

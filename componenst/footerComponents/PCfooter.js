@@ -17,10 +17,10 @@ export default function PCfooter() {
                     <CustomLink href={'/case'} activeClassName={style.activeLink}>
                         <a className={style.link}>开发案例</a>
                     </CustomLink>
-                    <i className={style.line} />
+                    {/* <i className={style.line} />
                     <CustomLink href={'/about'} activeClassName={style.activeLink}>
                         <a className={style.link}>关于我们</a>
-                    </CustomLink>
+                    </CustomLink> */}
                 </div>
 
                 <div className={style.copy}>COPYRIGHT©2021 深圳市杰斯科技有限公司</div>
