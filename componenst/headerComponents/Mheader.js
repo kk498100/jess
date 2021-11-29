@@ -17,7 +17,7 @@ export default function Mheader() {
     }
 
     return (
-        <header className="md:hidden">
+        <header className={style.head}>
             <span onClick={openAside}>
                 <Icon name="nav_btn" className={`fill-white ${ style.navBtn }`} />
             </span>

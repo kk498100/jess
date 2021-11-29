@@ -3,7 +3,7 @@ import CustomLink from '../Link';
 
 export default function PCfooter() {
     return (
-        <footer className={`w-full hidden md:block ${ style.footer }`}>
+        <footer className={style.footer}>
             <div className={`container flex flex-col ${ style.main }`}>
                 <div className="flex items-center justify-center flex-nowrap">
                     <CustomLink href={'/'} activeClassName={style.activeLink}>

@@ -6,6 +6,12 @@
     @apply fixed hover:fill-primary cursor-pointer z-40;
 }
 
+.head {
+    @screen md {
+        @apply hidden;
+    }
+}
+
 .guid {
     // background-color: rgba(#000, .3);
     @apply fixed left-0 top-0 z-50;

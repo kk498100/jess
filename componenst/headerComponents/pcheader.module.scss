@@ -18,3 +18,11 @@
         }
     }
 }
+
+.head {
+    @apply hidden bg-white w-full;
+
+    @screen md {
+        @apply block;
+    }
+}

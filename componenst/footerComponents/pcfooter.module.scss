@@ -1,5 +1,6 @@
 .footer {
     background-color: #1b1b1b;
+    @apply w-full hidden;
 
     .main {
         padding: 80px 0;
@@ -26,5 +27,9 @@
         color: #666;
         margin-top: 80px;
         text-align: center;
+    }
+
+    @screen md {
+        @apply block;
     }
 }

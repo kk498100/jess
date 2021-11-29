@@ -5,7 +5,8 @@ import CustomLink from '../Link';
 
 export default function PCheader() {
     return (
-        <header className="hidden md:block bg-white w-full">
+        // <header className="hidden md:block bg-white w-full">
+        <header className={style.head}>
             <div className={`container flex justify-between items-center ${ style.header }`}>
                 <Link href="/">
                     <a className="flex-none"><Image src="/images/common/logo.svg" alt="logo" priority width={220} height={44} /></a>
