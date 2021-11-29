@@ -22,9 +22,6 @@ export default function PCheader() {
                     <CustomLink href={'/case'} activeClassName={style.activeLink}>
                         <a className={`${ style.link }`}>开发案例</a>
                     </CustomLink>
-                    {/* <CustomLink href={'/about'} activeClassName={style.activeLink}>
-                        <a className={`${ style.link }`}>关于我们</a>
-                    </CustomLink> */}
                 </nav>
             </div>
         </header>
