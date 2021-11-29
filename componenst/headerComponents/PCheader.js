@@ -12,7 +12,7 @@ export default function PCheader() {
                     <a className="flex-none"><Image src="/images/common/logo.svg" alt="logo" priority width={220} height={44} /></a>
                 </Link>
 
-                <nav className="flex items-center flex-nowrap flex-1 justify-end">
+                <nav className="flex items-center flex-nowrap flex-1 justify-end" style="justify-content: flex-end">
                     <CustomLink href={'/'} activeClassName={style.activeLink}>
                         <a className={`${ style.link } mr-1 lg:mr-3`}>首页</a>
                     </CustomLink>
