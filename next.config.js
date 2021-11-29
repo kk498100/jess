@@ -5,9 +5,6 @@ module.exports = {
     generateBuildId: async () => {
         return 'offical';
     },
-
-    // 自定义输入目录
-    distDir: 'build',
     // 压缩
     compress: true,
     // 自定义webpack
