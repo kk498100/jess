@@ -8,7 +8,7 @@ export default function PCheader() {
         <header className={style.head}>
             <div className={`container flex justify-between items-center ${ style.header }`}>
                 <Link href="/">
-                    <a className="flex-none"><Image src="/images/common/logo.svg" alt="logo" priority width={220} height={44} /></a>
+                    <a className="flex-none"><Image src="/images/common/logo.png" alt="logo" priority width={220} height={44} /></a>
                 </Link>
 
                 <nav className="flex items-center flex-nowrap flex-1 justify-end" style={{justifyContent: 'flex-end'}}>
