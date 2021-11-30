@@ -31,16 +31,16 @@ export default function Mheader() {
                     </Link>
 
                     <CustomLink href={'/'} activeClassName={style.activeLink}>
-                        <a className={`${ style.link }`}>首页</a>
+                        <a className={style.link}>首页</a>
                     </CustomLink>
                     <CustomLink href={'/server'} activeClassName={style.activeLink}>
-                        <a className={`${ style.link }`}>服务介绍</a>
+                        <a className={style.link}>服务介绍</a>
                     </CustomLink>
                     <CustomLink href={'/case'} activeClassName={style.activeLink}>
-                        <a className={`${ style.link }`}>开发案例</a>
+                        <a className={style.link}>开发案例</a>
                     </CustomLink>
                     {/* <CustomLink href={'/about'} activeClassName={style.activeLink}>
-                        <a className={`mt-1 ${ style.link }`}>关于我们</a>
+                        <a className={style.link}>关于我们</a>
                     </CustomLink> */}
                 </div>
             </aside>
