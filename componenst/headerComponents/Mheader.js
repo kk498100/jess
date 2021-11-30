@@ -24,7 +24,7 @@ export default function Mheader() {
 
             <span className={`w-full h-screen ${ style.mask } ${ showAside && style.maskShow }`}></span>
 
-            <aside className={`w-full h-screen ${ style.guid } ${ showAside && style.guidShow }`} onClick={hideAside}>
+            <aside className={`${ style.guid } ${ showAside && style.guidShow }`} onClick={hideAside}>
                 <div className={style.guidArea}>
                     <Link href={'/'}>
                         <a className={`relative inline-block ${ style.logo }`}><Image src="/images/common/logo.svg" alt="logo" priority layout="fill" /></a>
