@@ -114,6 +114,8 @@
     @screen md {
         padding: 80px 0;
 
+        @apply items-start;
+
         .title {
             font-size: 48px;
         }
