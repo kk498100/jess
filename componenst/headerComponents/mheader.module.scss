@@ -52,17 +52,13 @@
     height: .91rem;
     font-size: .45rem;
     color: #333;
-    margin-top: 0.25rem;
+    margin-top: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #fff;
     line-height: 1;
     border-radius: 99999px;
-
-    &:first-child {
-        margin-top: 0.5rem;
-    }
 
     &.activeLink {
         box-shadow: 0 1px .24rem 0 rgba(17, 88, 232, 0.65);

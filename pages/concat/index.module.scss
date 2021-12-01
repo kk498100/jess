@@ -1,0 +1,132 @@
+.banner {
+    height: 10rem;
+    @apply w-full bg-no-repeat bg-center bg-cover;
+    background-image: url('/images/index/banner_m.jpg');
+
+    .textArea {
+        backdrop-filter: blur(1.5px);
+        @apply w-full h-full flex items-center justify-center;
+    }
+
+    .text {
+        padding: .67rem .27rem .53rem;
+        border: .08rem solid #fff;
+        @apply relative flex flex-col box-border items-center;
+    }
+
+    .title, .msg {
+        font-family: 'ZCOOL XiaoWei', serif;
+    }
+
+    .title, .msg, .tip {
+        @apply text-white whitespace-nowrap;
+    }
+
+    .title {
+        font-size: .69rem;
+        padding: 0 .13rem;
+        line-height: 1;
+        mask: radial-gradient(circle at 0 50%, #000, transparent 10%, transparent 0);
+        mask-size: 100%;
+        animation: scale 5s infinite;
+        text-align: center;
+    }
+
+    .msg {
+        font-size: .53rem;
+        line-height: 1;
+    }
+
+    .tip {
+        font-size: .21rem;
+        margin-top: .27rem;
+    }
+
+    @screen md {
+        height: 800px;
+        background-image: url('/images/index/banner.jpg');
+
+        .text {
+            padding: 60px 70px;
+            border: 6px solid #fff;
+        }
+
+        .title {
+            font-size: 76px;
+        }
+
+        .msg {
+            font-size: 40px;
+        }
+    
+        .tip {
+            font-size: 18px;
+            margin-top: 26px;
+        }
+    }
+}
+
+@keyframes scale {
+    50%,
+    100% {
+        mask-size: 2000%;
+    }
+}
+
+.map {
+    height: 10.67rem;
+    margin: .8rem auto;
+    padding: 0 .4rem;
+    @apply container box-border;
+
+    @screen md {
+        height: 600px;
+        padding: 0;
+        margin: 60px auto;
+    }
+}
+
+.concatBg {
+    background-color: #f2f2f2;
+    @apply w-full;
+}
+
+.concat {
+    padding: .8rem .4rem;
+    @apply container box-border flex flex-col items-center;
+
+    .title {
+        font-size: .53rem;
+        color: #333;
+    }
+
+    .con {
+        @apply w-full flex flex-col box-border;
+        font-size: .43rem;
+        margin-top: 1rem;
+        padding: 0 .4rem;
+    }
+
+    .item:not(:first-child) {
+        margin-top: .4rem;
+    }
+
+    @screen md {
+        padding: 80px 0;
+
+        .title {
+            font-size: 48px;
+        }
+
+        .con {
+            @apply flex-row justify-between;
+            padding: 0;
+            margin-top: 70px;
+            font-size: 24px;
+        }
+
+        .item {
+            margin: 0;
+        }
+    }
+}
