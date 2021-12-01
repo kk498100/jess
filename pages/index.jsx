@@ -35,10 +35,10 @@ export default function Home() {
             <div className={`${ style.banner } flex flex-col items-center justify-center`}>
                 <span id="bannerTxt_01" className={`text-white ${ style.bannerTxt_01 }`}>互联网一站式服务平台</span>
                 <span className={`text-white ${ style.bannerTxt_02 }`}>助你轻松进入互联网+时代</span>
-                <Link href={'/case'}>
+                <Link href={'/concat'}>
                     <a className={style.link}>
                         <div className={style.front}><Icon name="long_arr" className={`fill-white ${ style.icon }`} /></div>
-                        <div className={style.back}>开发案例</div>
+                        <div className={style.back}>联系我们</div>
                     </a>
                 </Link>
             </div>
