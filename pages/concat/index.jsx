@@ -31,7 +31,7 @@ export default function Concat() {
             <div className={style.banner}>
                 <div className={style.textArea}>
                     <fieldset className={style.text}>
-                        <legend align="center" className={style.title}>我们的联系方式</legend>
+                        <legend align="center" className={style.title}>联系方式</legend>
                         <span className={style.msg}>信息链接你我，赋能未来</span>
                         <span className={style.tip}>网服务站搭建、APP开发，小程序制作，各种平台搭建</span>
                     </fieldset>
