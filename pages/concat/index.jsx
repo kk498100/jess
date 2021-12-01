@@ -15,8 +15,6 @@ export default function Concat() {
         map.addControl(navi3DCtrl);
         const marker = new BMapGL.Marker(new BMapGL.Point(113.866359, 22.578397));
         map.addOverlay(marker);
-        const location = new BMapGL.LocationControl();
-        map.addOverlay(location);
     });
 
     return (
