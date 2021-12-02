@@ -39,9 +39,9 @@ export default function Concat() {
                 </div>
             </div>
             {/* 百度地图 */}
-            <Map center={{lng: 113.866359, lat: 22.578397}} zoom="19" className={style.map} tilt={73} heading={64.5} enableScrollWheelZoom={true} style={{height: '450px'}} >
+            <Map center={{lng: 113.866204, lat: 22.577568}} zoom="19" className={style.map} tilt={73} heading={64.5} enableScrollWheelZoom={true} style={{height: '450px'}} >
                 {/* 标记 */}
-                <Marker position={{lng: 113.866359, lat: 22.578397}} autoViewport={true} enableDragging={true} />
+                <Marker position={{lng: 113.866204, lat: 22.577568}} autoViewport={true} enableDragging={true} />
                 {/* NavigationControl 3D控件 */}
                 <NavigationControl />
                 {/* ZoomControl 缩放控件 */}
