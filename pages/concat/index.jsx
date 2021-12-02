@@ -32,7 +32,7 @@ export default function Concat() {
                     <h2 className={`${ style.title } wow animated bounceInDown`}>联系我们</h2>
 
                     <div className={style.con}>
-                        <span className={style.item}>电话：13871538757</span>
+                        <span className={style.item}>电话/微信：13871538757</span>
                         <span className={style.item}>邮箱：kk498100@163.com</span>
                         <span className={style.item}>地址：深圳市宝安区西乡大道2007号宗泰未来城</span>
                     </div>
