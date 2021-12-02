@@ -74,15 +74,12 @@
 }
 
 .map {
-    height: 10.67rem;
-    margin: .8rem auto;
+    width: 100%;
     padding: 0 .4rem;
-    @apply container box-border;
+    @apply box-border;
 
     @screen md {
-        height: 600px;
         padding: 0;
-        margin: 60px auto;
     }
 }
 

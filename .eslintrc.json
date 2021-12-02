@@ -19,6 +19,7 @@
         "default-case": 1,
         "class-methods-use-this": 1,
         "react/jsx-curly-spacing": [1, { "when": "never" }],
-        "react/no-array-index-key": 1
+        "react/no-array-index-key": 1,
+        "@next/next/no-sync-scripts": 0
     }
 }

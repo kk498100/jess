@@ -1,22 +1,11 @@
 import style from './index.module.scss';
 import Head from 'next/head';
-import { useEffect } from 'react';
+import Map from 'react-bmapgl/Map';
+import Marker from 'react-bmapgl/Overlay/Marker';
+import NavigationControl from 'react-bmapgl/Control/NavigationControl';
+import ZoomControl from 'react-bmapgl/Control/ZoomControl';
 
 export default function Concat() {
-
-    useEffect(() => {
-        const map = new BMapGL.Map('map');
-        const point = new BMapGL.Point(113.866359, 22.578397);
-        map.centerAndZoom(point, 19);
-        map.enableScrollWheelZoom(true);
-        map.setHeading(64.5);
-        map.setTilt(73);
-        const navi3DCtrl = new BMapGL.NavigationControl3D();  // 添加3D控件
-        map.addControl(navi3DCtrl);
-        const marker = new BMapGL.Marker(new BMapGL.Point(113.866359, 22.578397));
-        map.addOverlay(marker);
-    });
-
     return (
         <>
             <Head>
@@ -25,7 +14,7 @@ export default function Concat() {
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap" />
-                <script type="text/javascript" src="https://api.map.baidu.com/api?v=1.0&&type=webgl&ak=T4nA9IPvzu3mPQvjPBEIGYlZjygqRQvc"></script>
+                <script src="https://api.map.baidu.com/api?v=3.0&&type=webgl&ak=T4nA9IPvzu3mPQvjPBEIGYlZjygqRQvc" preload="true" />
             </Head>
             {/* banner */}
             <div className={style.banner}>
@@ -50,7 +39,20 @@ export default function Concat() {
                 </div>
             </div>
             {/* 百度地图 */}
-            <div id="map" className={style.map} />
+            <Map
+                center={{lng: 113.866359, lat: 22.578397}}
+                zoom="19" className={style.map}
+                tilt={73}
+                heading={64.5}
+                enableScrollWheelZoom={true}
+                style={{height: '450px'}} >
+                {/* 标记 */}
+                <Marker position={{lng: 113.866359, lat: 22.578397}} autoViewport={true} enableDragging={true} />
+                {/* NavigationControl 3D控件 */}
+                <NavigationControl />
+                {/* ZoomControl 缩放控件 */}
+                <ZoomControl />
+            </Map>
         </>
     );
 }
