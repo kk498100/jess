@@ -6,7 +6,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export default function Home() {
-
     useEffect(() => {
         const random = function random(min, max) {
             return min + ~~(Math.random() * (max - min + 1));
@@ -21,7 +20,6 @@ export default function Home() {
             heading.append(span);
         });
     });
-
     return (
         <> 
             <Head>
