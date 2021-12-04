@@ -27,7 +27,8 @@ export default function Mheader() {
             <aside className={`${ style.guid } ${ showAside && style.guidShow }`} onClick={hideAside}>
                 <div className={style.guidArea}>
                     <Link href={'/'}>
-                        <a className={`relative inline-block ${ style.logo }`}><Image src="/images/common/logo.svg" alt="logo" priority layout="fill" /></a>
+                        {/* <a className={`relative inline-block ${ style.logo }`}><Image src="/images/common/logo.svg" alt="logo" priority layout="fill" /></a> */}
+                        <a className={style.logo}>杰斯科技</a>
                     </Link>
 
                     <CustomLink href={'/'} activeClassName={style.activeLink}>

@@ -14,9 +14,9 @@
         @apply relative flex flex-col box-border items-center;
     }
 
-    .title, .msg {
-        font-family: 'ZCOOL XiaoWei', serif;
-    }
+    // .title, .msg {
+    //     font-family: 'ZCOOL XiaoWei', serif;
+    // }
 
     .title, .msg, .tip {
         @apply text-white whitespace-nowrap;
@@ -43,7 +43,7 @@
     }
 
     @screen md {
-        height: 800px;
+        height: 600px;
         background-image: url('/images/index/banner.jpg');
 
         .text {
@@ -141,28 +141,28 @@
         margin-top: 80px;
 
         .title {
-            font-size: 48px;
+            font-size: 36px;
         }
 
         .tip {
-            font-size: 18px;
-            margin-top: 16px;
+            font-size: 14px;
         }
 
         .con {
             margin-top: 74px;
-            padding: 0;
+            padding: 0 100px;
             margin-bottom: 140px;
+            box-sizing: border-box;
         }
     
         .itemTitle {
-            font-size: 26px;
-            margin-top: 30px;
+            font-size: 16px;
+            margin-top: 12px;
         }
     
         .itemMsg {
-            font-size: 20px;
-            margin-top: 10px;
+            font-size: 14px;
+            // margin-top: 6px;
         }
     }
 }

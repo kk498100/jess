@@ -28,8 +28,8 @@ export default function Case() {
                 <h2 className={`${ style.title } wow animated bounceInDown`}>成功案例</h2>
                 <h3 className={`${ style.tip } wow animated bounceInLeft text-dustyGray`}>专注负责一站式服务体系</h3>
 
-                <div className={`container ${ style.con } grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-3 gap-y-2 lg:gap-x-12 lg:gap-y-7`}>
-                    <div className="w-full flex flex-col wow animated bounceInLeft">
+                <div className={`container ${ style.con } grid grid-cols-2 lg:grid-cols-3 gap-x-3 gap-y-2 lg:gap-x-12 lg:gap-y-7`}>
+                    <div className="w-full flex flex-col">
                         <Link href="/case/FREESTUDY">
                             <a className={style.linkArea} title="FREESTUDY">
                                 <Image src="/images/case/case_01.jpg" alt="case-1" width={440} height={368} />
@@ -39,7 +39,7 @@ export default function Case() {
                         <h3 className={style.itemTitle}>教育类</h3>
                         <h4 className={style.itemMsg}>FREESTUDY</h4>
                     </div>
-                    <div className="w-full flex flex-col wow animated rotateIn">
+                    <div className="w-full flex flex-col">
                         <Link href="/case/Selfstudy">
                             <a className={style.linkArea} title="自考大神">
                                 <Image src="/images/case/case_02.jpg" alt="case-2" width={440} height={368} />
@@ -49,7 +49,7 @@ export default function Case() {
                         <h3 className={style.itemTitle}>教育类</h3>
                         <h4 className={style.itemMsg}>自考大神</h4>
                     </div>
-                    <div className="w-full flex flex-col wow animated flipInX">
+                    <div className="w-full flex flex-col">
                         <Link href="/case/Beginning">
                             <a className={style.linkArea} title="新起点教育">
                                 <Image src="/images/case/case_03.jpg" alt="case-3" width={440} height={368} />
@@ -59,7 +59,7 @@ export default function Case() {
                         <h3 className={style.itemTitle}>教育类</h3>
                         <h4 className={style.itemMsg}>新起点教育</h4>
                     </div>
-                    <div className="w-full flex flex-col wow animated flipInY">
+                    <div className="w-full flex flex-col">
                         <Link href="/case/Listener">
                             <a className={style.linkArea} title="倾听者">
                                 <Image src="/images/case/case_04.jpg" alt="case-4" width={440} height={368} />
@@ -69,7 +69,7 @@ export default function Case() {
                         <h3 className={style.itemTitle}>社交类</h3>
                         <h4 className={style.itemMsg}>倾听者</h4>
                     </div>
-                    <div className="w-full flex flex-col wow animated rotateIn">
+                    <div className="w-full flex flex-col">
                         <Link href="/case/Pet">
                             <a className={style.linkArea} title="汇宠">
                                 <Image src="/images/case/case_05.jpg" alt="case-5" width={440} height={368} />
@@ -79,7 +79,7 @@ export default function Case() {
                         <h3 className={style.itemTitle}>社交类</h3>
                         <h4 className={style.itemMsg}>汇宠</h4>
                     </div>
-                    <div className="w-full flex flex-col wow animated fadeInLeft">
+                    <div className="w-full flex flex-col">
                         <Link href="/case/Dazzle">
                             <a className={style.linkArea} title="炫影">
                                 <Image src="/images/case/case_06.jpg" alt="case-6" width={440} height={368} />
@@ -89,7 +89,7 @@ export default function Case() {
                         <h3 className={style.itemTitle}>直播类</h3>
                         <h4 className={style.itemMsg}>炫影</h4>
                     </div>
-                    <div className="w-full flex flex-col wow animated fadeInLeftBig">
+                    <div className="w-full flex flex-col">
                         <Link href="/case/Fresh">
                             <a className={style.linkArea} title="齐家生鲜">
                                 <Image src="/images/case/case_07.jpg" alt="case-7" width={440} height={368} />
@@ -99,7 +99,7 @@ export default function Case() {
                         <h3 className={style.itemTitle}>生鲜配送类</h3>
                         <h4 className={style.itemMsg}>齐家生鲜</h4>
                     </div>
-                    <div className="w-full flex flex-col wow animated bounceInUp">
+                    <div className="w-full flex flex-col">
                         <Link href="/case/Good">
                             <a className={style.linkArea} title="好又惠">
                                 <Image src="/images/case/case_08.jpg" alt="case-8" width={440} height={368} />
@@ -109,7 +109,7 @@ export default function Case() {
                         <h3 className={style.itemTitle}>电商类</h3>
                         <h4 className={style.itemMsg}>好又惠</h4>
                     </div>
-                    <div className="w-full flex flex-col wow animated fadeInRightBig">
+                    <div className="w-full flex flex-col">
                         <Link href="/case/Quick">
                             <a className={style.linkArea} title="当日速聘">
                                 <Image src="/images/case/case_09.jpg" alt="case-9" width={440} height={368} />

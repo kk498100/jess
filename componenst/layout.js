@@ -18,7 +18,7 @@ export default function Layout({ children }) {
             <Mheader />
             {/* pc端头部 */}
             <PCheader />
-            <main className="w-full min-h-screen">{ children }</main>
+            <main className="w-full min-h-screen flex flex-col">{ children }</main>
             {/* m端底部 */}
             <Mfooter />
             {/* pc端底部 */}

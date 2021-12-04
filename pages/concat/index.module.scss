@@ -14,10 +14,6 @@
         @apply relative flex flex-col box-border items-center;
     }
 
-    .title, .msg {
-        font-family: 'ZCOOL XiaoWei', serif;
-    }
-
     .title, .msg, .tip {
         @apply text-white whitespace-nowrap;
     }
@@ -43,7 +39,7 @@
     }
 
     @screen md {
-        height: 800px;
+        height: 600px;
         background-image: url('/images/index/banner.jpg');
 
         .text {
@@ -74,18 +70,20 @@
 }
 
 .map {
-    width: 100%;
+    width: 300px;
+    flex: none;
     padding: 0 .4rem;
-    @apply box-border;
+    @apply box-border hidden;
 
     @screen md {
         padding: 0;
+        @apply block;
     }
 }
 
 .concatBg {
     background-color: #f2f2f2;
-    @apply w-full;
+    @apply w-full flex-1;
 }
 
 .concat {
@@ -100,7 +98,7 @@
     .con {
         @apply w-full flex flex-col box-border;
         font-size: .43rem;
-        margin-top: 1rem;
+        // margin-top: 1rem;
         padding: 0 .4rem;
     }
 
@@ -109,19 +107,22 @@
     }
 
     @screen md {
-        padding: 80px 0;
+        padding: 60px 80px;
+        box-sizing: box-border;
 
         @apply items-start;
 
         .title {
-            font-size: 48px;
+            font-size: 30px;
+            margin-bottom: 20px;
         }
 
         .con {
-            @apply flex-row justify-between;
+            // @apply flex-row justify-between;
             padding: 0;
-            margin-top: 70px;
-            font-size: 24px;
+            // margin-top: 30px;
+            margin: 0;
+            font-size: 18px;
         }
 
         .item {

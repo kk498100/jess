@@ -3,11 +3,11 @@
     @apply w-full hidden;
 
     .main {
-        padding: 80px 0;
+        padding: 40px 0;
     }
 
     .link {
-        font-size: 20px;
+        font-size: 16px;
         color: #999;
 
         &:hover, &.activeLink {
@@ -23,9 +23,9 @@
     }
 
     .copy {
-        font-size: 18px;
+        font-size: 14px;
         color: #666;
-        margin-top: 80px;
+        margin-top: 30px;
         text-align: center;
     }
 

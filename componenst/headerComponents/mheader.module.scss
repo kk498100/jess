@@ -42,9 +42,9 @@
 }
 
 .logo {
-    width: 3.57rem;
-    height: .91rem;
-    transition: width .2s;
+    font-size: 1rem;
+    font-weight: 800;
+    @apply text-primary;
 }
 
 .link {

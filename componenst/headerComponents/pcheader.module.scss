@@ -1,20 +1,36 @@
 .header {
-    padding: 24px 0;
+    padding: 12px 0;
+
+    .logo {
+        font-weight: 800;
+        white-space: nowrap;
+        font-size: 42px;
+        @apply text-primary;
+    }
 
     .link {
-        padding: 10px 30px;
+        padding: 8px 30px;
         color: #333;
-        @apply rounded-full whitespace-nowrap text-xl;
+        font-size: 16px;
+        @apply rounded-full whitespace-nowrap;
 
-        &:hover, &.activeLink {
-            box-shadow: 0 1px 18px 0 rgba(17, 88, 232, 0.65);
+        &.activeLink {
+            box-shadow: 0 1px 8px 0 rgba(17, 88, 232, 0.65);
             @apply text-white bg-primary;
+
+            &:hover {
+                @apply text-white;
+            }
+        }
+
+        &:hover {
+            @apply text-primary;
         }
     }
 
     @screen lg {
         .link {
-            padding: 16px 40px;
+            padding: 8px 34px;
         }
     }
 }

@@ -46,7 +46,7 @@ export default function Home() {
                 <h2 className={`${ style.title } wow animated bounceInDown`}>我们的服务</h2>
                 <h3 className={`${ style.tip } wow animated bounceInLeft text-dustyGray`}>网站、APP小程序定制开发，您想要的都能做</h3>
 
-                <div className="container grid grid-cols-2 mt-4 gap-y-2 lg:grid-cols-4 md:mt-28 md:gap-y-10">
+                <div className="container grid grid-cols-2 mt-4 gap-y-2 lg:grid-cols-4 md:mt-16 md:gap-y-10">
                     <div className={`flex flex-col w-full items-center wow animated bounceInLeft`}>
                         <Icon name="icon_technology" className={`fill-primary ${ style.icon }`} />
                         <h4 className={style.msg}>IT技术</h4>
@@ -126,9 +126,9 @@ export default function Home() {
             </div>
             {/* 解决方案 */}
             <div className={`container flex flex-col items-center mb-2 md:mb-12 ${ style.solve }`}>
-                <h2 className={`${ style.title } wow animated bounceInDown`}>解决方案</h2>
-                <h3 className={`${ style.tip } wow animated bounceInLeft text-dustyGray`}>解决企业与互联网的最后一步，为企业发展画上完美一笔</h3>
-                <div className={`flex items-center justify-between mt-4 md:mt-16`}>
+                <h2 className={`${ style.title } wow animated bounceInDown hidden md:block`}>解决方案</h2>
+                <h3 className={`${ style.tip } wow animated bounceInLeft text-dustyGray hidden md:block`}>解决企业与互联网的最后一步，为企业发展画上完美一笔</h3>
+                <div className={`flex items-center justify-between md:mt-16`}>
                     <div className={`relative hidden lg:inline-block ${ style.imgArea }`}>
                         <Image src={'/images/index/solve.jpg'} alt="解决方案" layout="fill" />
                     </div>

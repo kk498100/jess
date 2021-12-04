@@ -29,24 +29,26 @@ export default function Concat() {
             {/* 联系我们 */}
             <div className={style.concatBg}>
                 <div className={style.concat}>
-                    <h2 className={`${ style.title } wow animated bounceInDown`}>联系我们</h2>
-
-                    <div className={style.con}>
-                        <span className={style.item}>电话/微信：13871538757</span>
-                        <span className={style.item}>邮箱：kk498100@163.com</span>
-                        <span className={style.item}>地址：深圳市宝安区西乡大道2007号宗泰未来城</span>
+                    <div className="w-full flex justify-between">
+                        <div className={style.con}>
+                         <h2 className={`${ style.title } wow animated bounceInDown`}>联系我们</h2>
+                            <span className={style.item}>电话/微信：13871538757</span>
+                            <span className={style.item}>邮箱：kk498100@163.com</span>
+                            <span className={style.item}>地址：深圳市宝安区西乡大道2007号宗泰未来城</span>
+                        </div>
+                        
+                        {/* 百度地图 */}
+                        <Map center={{lng: 113.866204, lat: 22.577568}} zoom="19" className={style.map} tilt={73} heading={64.5} enableScrollWheelZoom={true} style={{height: '200px'}} >
+                            {/* 标记 */}
+                            <Marker position={{lng: 113.866204, lat: 22.577568}} autoViewport={true} enableDragging={true} />
+                            {/* NavigationControl 3D控件 */}
+                            <NavigationControl />
+                            {/* ZoomControl 缩放控件 */}
+                            <ZoomControl />
+                        </Map>
                     </div>
                 </div>
             </div>
-            {/* 百度地图 */}
-            <Map center={{lng: 113.866204, lat: 22.577568}} zoom="19" className={style.map} tilt={73} heading={64.5} enableScrollWheelZoom={true} style={{height: '450px'}} >
-                {/* 标记 */}
-                <Marker position={{lng: 113.866204, lat: 22.577568}} autoViewport={true} enableDragging={true} />
-                {/* NavigationControl 3D控件 */}
-                <NavigationControl />
-                {/* ZoomControl 缩放控件 */}
-                <ZoomControl />
-            </Map>
         </>
     );
 }
