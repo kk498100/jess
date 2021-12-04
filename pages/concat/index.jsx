@@ -14,7 +14,6 @@ export default function Concat() {
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap" />
-                <script src="https://api.map.baidu.com/api?v=1.0&&type=webgl&ak=T4nA9IPvzu3mPQvjPBEIGYlZjygqRQvc" preload="true" />
             </Head>
             {/* banner */}
             <div className={style.banner}>

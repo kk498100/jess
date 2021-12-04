@@ -13,6 +13,7 @@ export default function Layout({ children }) {
                 <meta property="og:title" content="My title" key="title" />
                 <script src="/js/lib-flexable.js" charSet="utf-8" type="text/javascript" />
                 <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+                <script src="https://api.map.baidu.com/api?v=1.0&&type=webgl&ak=T4nA9IPvzu3mPQvjPBEIGYlZjygqRQvc" preload="true" />
             </Head>
             {/* 手机端头部 */}
             <Mheader />
